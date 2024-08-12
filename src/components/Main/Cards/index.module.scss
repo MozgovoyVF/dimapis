@@ -1,0 +1,31 @@
+.cards {
+  display: grid;
+  justify-items: baseline;
+  grid-template-columns: 1fr;
+  gap: 5px;
+
+  .card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    background-color: #000;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.4;
+    }
+
+    .info {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.8;
+      z-index: 1;
+    }
+  }
+}
